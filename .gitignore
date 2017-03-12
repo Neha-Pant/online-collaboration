@@ -9,7 +9,11 @@
 *.ear
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+hs_err_
 
+<<<<<<< HEAD
                         /onlinecollaboration/target/
+=======
+/onlinecollaboration/target/
+>>>>>>> 18106b4174206aacbea7521c8f3e37bc5d5473d1
 /eAllianz/bower-components/   
