@@ -1,0 +1,6 @@
+package daoImpl;
+
+public class UserDAOImpl implements IUserDAO
+{
+
+}
