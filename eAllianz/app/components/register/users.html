@@ -11,6 +11,7 @@
         </center>
         <table border="1" class="table table-bordered table-hover table-striped">
             <tr>
+                <th>User Image</th>
                 <th>User ID</th>
                 <th>User Name</th>
                 <th>Full Name</th>
@@ -22,6 +23,7 @@
                 <th>Disapprove</th>
             </tr>
             <tr ng-repeat="x in regCtrl.usersD">
+                <td><img ng-src="./assets/images/{{x.userImage}}" height="80" width="80"/></td>
                 <td>{{x.userId}}</td>
                 <td>{{x.userName}}</td>
                 <td>{{x.fullName}}</td>
@@ -39,6 +41,7 @@
         </center>
         <table border="1" class="table table-bordered table-hover table-striped">
             <tr>
+                <th>User Image</th>
                 <th>User ID</th>
                 <th>User Name</th>
                 <th>Full Name</th>
@@ -48,6 +51,7 @@
                 <th>Phone</th>
             </tr>
             <tr ng-repeat="x in regCtrl.usersA">
+                <td><img ng-src="./assets/images/{{x.userImage}}" height="80" width="80"/></td>
                 <td>{{x.userId}}</td>
                 <td>{{x.userName}}</td>
                 <td>{{x.fullName}}</td>
