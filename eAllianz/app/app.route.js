@@ -32,11 +32,75 @@ window.routes =
             requireLogin: false,
             roles: ['GUEST']
         },
+        "/blogAdd":
+        {
+            templateUrl: 'app/components/blog/blog.html',
+            controller: 'BlogController',
+            controllerAs: 'blogCtrl',
+            requireLogin: false,
+            roles: ['GUEST']
+        },
+         "/blogs":
+        {
+            templateUrl: 'app/components/blog/blogs.html',
+            controller: 'BlogController',
+            controllerAs: 'blogCtrl',
+            requireLogin: false,
+            roles: ['GUEST']
+        },
+         "/viewBlogs":
+        {
+            templateUrl: 'app/components/blog/viewBlogs.html',
+            controller: 'BlogController',
+            controllerAs: 'blogCtrl',
+            requireLogin: false,
+            roles: ['GUEST']
+        },
+          "/singleBlogView":
+        {
+            templateUrl: 'app/components/blog/singleBlog.html',
+            controller: 'BlogController',
+            controllerAs: 'blogCtrl',
+            requireLogin: false,
+            roles: ['GUEST']
+        },
+         "/createEvent":
+        {
+            templateUrl: 'app/components/event/createEvent.html',
+            controller: 'eventController',
+            controllerAs: 'eventCtrl',
+            requireLogin: false,
+            roles: ['GUEST']
+        },
+         "/eventView":
+        {
+            templateUrl: 'app/components/event/viewEvent.html',
+            controller: 'eventController',
+            controllerAs: 'eventCtrl',
+            requireLogin: false,
+            roles: ['GUEST']
+        },
+           "/createJob":
+        {
+            templateUrl: 'app/components/job/createJob.html',
+            controller: 'jobController',
+            controllerAs: 'jobCtrl',
+            requireLogin: false,
+            roles: ['GUEST']
+        },
+         "/jobView":
+        {
+            templateUrl: 'app/components/job/viewJob.html',
+            controller: 'jobController',
+            controllerAs: 'jobCtrl',
+            requireLogin: false,
+            roles: ['GUEST']
+        },
         "/login":
         {
-            templateUrl: 'app/components/authentication/login.html',
-            controller: 'AuthenticationController',
-            controllerAs: 'authCtrl',
+            templateUrl: 'app/components/login/login.html',
+            // controller: 'LoginController',
+            // controllerAs: 'loginCtrl',
             requireLogin: false,
             roles: ['GUEST', 'ADMIN', 'STAFF', 'STUDENT']
         }
@@ -53,3 +117,17 @@ app.config(['$routeProvider', function ($routeProvider) {
     }
     $routeProvider.otherwise({ redirectTo: '/home' });
 }]);
+
+// app.run(['$route', '$rootScope', '$location', function ($route, $rootScope, $location) {
+//     var original = $location.path;
+//     $location.path = function (path, reload) {
+//         if (reload === false) {
+//             var lastRoute = $route.current;
+//             var un = $rootScope.$on('$locationChangeSuccess', function () {
+//                 $route.current = lastRoute;
+//                 un();
+//             });
+//         }
+//         return original.apply($location, [path]);
+//     };
+// }])

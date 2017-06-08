@@ -1,26 +1,26 @@
-package org.socialnetworking.test;
-
-import org.junit.BeforeClass;
-import org.junit.Test;
-import org.socialnetworking.dao.IUserDAO;
-import static org.junit.Assert.*;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import org.socialnetworking.model.User;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-public class UserTestCase {
-	private static AnnotationConfigApplicationContext context;
-	private static IUserDAO userDAO;
-	private User user;
-	
-	@BeforeClass
-	public static void init() {
-		context = new AnnotationConfigApplicationContext();
-		context.scan("org.socialnetworking");
-		context.refresh();
-		userDAO=(IUserDAO)context.getBean("userDAO");
-	}
+//package org.socialnetworking.test;
+//
+//import org.junit.BeforeClass;
+//import org.junit.Test;
+//import org.socialnetworking.dao.IUserDAO;
+//import static org.junit.Assert.*;
+//import org.junit.BeforeClass;
+//import org.junit.Test;
+//import org.socialnetworking.model.User;
+//import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+//
+//public class UserTestCase {
+//	private static AnnotationConfigApplicationContext context;
+//	private static IUserDAO userDAO;
+//	private User user;
+//	
+//	@BeforeClass
+//	public static void init() {
+//		context = new AnnotationConfigApplicationContext();
+//		context.scan("org.socialnetworking");
+//		context.refresh();
+//		userDAO=(IUserDAO)context.getBean("userDAO");
+//	}
 	
 //	@Test
 //	public void testAddUser()
@@ -67,4 +67,4 @@ public class UserTestCase {
 //		assertEquals("Deleting user based on id from table",true,userDAO.deleteUser(1));
 //	}
 
-}
+//}

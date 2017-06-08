@@ -1,4 +1,3 @@
-activeuserprofiles=DEL-CP-FLM07;Team
+activeuserprofiles=DEL-CP-FLM07-10;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=admin
-useridperkey=DEL-CP-FLM07.Local\=admin;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=MRuser

@@ -2,6 +2,9 @@ var app=angular.module("EAllianzApp",
 [
     'ngRoute',
     'BasicModule',
-    'RegisterModule'
+    'RegisterModule',
+    'BlogModule',
+    'EventModule',
+    'JobModule'
 ]
 );
