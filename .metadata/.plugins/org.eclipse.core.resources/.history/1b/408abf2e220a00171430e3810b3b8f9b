@@ -1,5 +1,0 @@
-package org.socialnetworking.config;
-
-public class HibernateConfig {
-
-}

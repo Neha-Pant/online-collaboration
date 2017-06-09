@@ -1,5 +1,0 @@
-package org.socialnetworking.dao;
-
-public interface IEventDAO {
-
-}
